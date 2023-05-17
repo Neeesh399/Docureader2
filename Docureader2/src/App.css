@@ -1,0 +1,239 @@
+body{
+  background-color: rgb(38, 38, 38);
+  color:rgb(228, 228, 228);
+}
+
+#header{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(33, 33, 33);
+}
+#logo{
+  font-size: 6vh;
+}
+#sidebar{
+  display: flex;
+  flex: 1 1 30%;
+  justify-content: right;
+  align-items: center;
+}
+.anchors{
+  font-size: 3vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-decoration: none;
+  width: max-content;
+}
+.customAnchor{
+  all:unset;
+  font-size: 3vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-decoration: none;
+  width: max-content;
+
+}
+.customAnchor:hover{
+  color: rgb(224, 109, 37);
+  cursor: pointer;
+}
+.anchors:any-link{
+  color: inherit;
+}
+.anchors:hover{
+  color: rgb(224, 109, 37);
+}
+
+#username, #password{
+  background-color: inherit;
+  color: inherit;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border-color: rgb(224, 109, 37);
+  outline: none;
+  width: 20vw;
+  height: 5vh;
+}
+#submitButton{
+  margin-top: 2vh;
+  background-color: rgb(224, 109, 37);
+  border-radius: 20%;
+  border-color: rgb(38, 38, 38);
+  color: rgb(38, 38, 38);
+  width: 10vw;
+  height: 2.5vw;
+}
+#submitButton:hover{
+  background-color: rgb(254, 139, 67);;
+}
+.labelBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+
+#businessLogic{
+  display: flex;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1em;
+}
+#folderHolder{
+  display: flex;
+  flex: 1 1 15%;
+  flex-direction: column;
+}
+#rightHolder{
+  display: flex;
+  flex: 1 1 85%;
+}
+#folderAddButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  border:none;
+  flex: 1 1 50%;
+}
+#footerInFolderHolder{
+  margin-top: 10vh;
+  display: flex;
+}
+#trashBin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  flex: 1 1 50%;
+}
+#trashBinIcon{
+  color:rgb(255, 47, 47);
+}
+#folderAddIcon{
+  color:rgb(58, 204, 35)
+}
+#folderAddIcon:hover{
+  color:rgb(162, 253, 44)
+}
+
+
+.folderDiv{
+  display: flex;
+}
+.folderDivExterior{
+  display: flex;
+  flex-direction: column;
+}
+.folderName{
+  background-color: inherit;
+  border: none;
+  color:inherit;
+  margin: 1em;
+  font-size: 1.2em;
+}
+.folderName:focus{
+  border: none;
+  outline: none;
+}
+.folderExpandButton{
+  background-color: inherit;
+  border: none;
+}
+.folderExpandButtonIcon{
+  color: rgb(228, 228, 228); 
+}
+.folderExpandButtonIcon:hover{
+  color: rgb(224, 109, 37);
+}
+
+.documentName{
+  background-color: inherit;
+  border: none;
+  color: rgb(228, 228, 228);
+  font-size: 1em;
+}
+.documentName:focus{
+  border: none;
+  outline: none;
+}
+.documentDiv{
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+.chatButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  border: none;
+}
+.chatButtonIcon{
+  color:rgb(228, 228, 228);
+}
+.chatButtonIcon:hover{
+  color:rgb(230, 54, 224);
+}
+
+#fileInputCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(228, 228, 228);
+  color: rgb(33, 33, 33);
+  border: 3px solid;
+  border-color: rgb(224, 109, 37);
+  border-radius: 5%;
+  padding: 1em;
+  min-width: 380px;
+  min-height: 260px;
+  max-width: 400px;
+  max-height: 260px;
+  margin:auto;
+  margin-top: 10vh;
+}
+#fileInputDiv{
+  position: relative;
+  margin-bottom: 1.5em;
+}
+#fileInput{
+  position: relative;
+  width:200px;
+  height:46px;
+  text-align: right;
+  z-index: 2;
+  opacity: 0;
+  font-size: inherit;
+  border-color: rgb(33, 33, 33);
+  cursor: pointer;
+}
+#fileInputButton{
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(224, 109, 37);
+  z-index: 1;
+  border-radius: 5%;
+  font-size: inherit;
+}
+#fileInputIconHolder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: inherit;
+}
+#fileInputButtonIcon{
+  color:rgb(38, 38, 38);
+  cursor: inherit;
+}
